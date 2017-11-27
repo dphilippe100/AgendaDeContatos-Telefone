@@ -29,7 +29,7 @@ public class Metodos {
 					String novoNome = ler.nextLine();
 					System.out.print("Digite o novo e-mail para o contato: ");
 					String novoEmail = ler.nextLine();
-					System.out.print("Digite o novo número para o contato: ");
+					System.out.print("Digite o novo nÃºmero para o contato: ");
 					String novotelefone = ler.nextLine();
 					lista.get(i).setNome(novoNome);
 					lista.get(i).setEmail(novoEmail);
@@ -37,7 +37,6 @@ public class Metodos {
 					System.out.print("Contato atualizado!!!");
 				}
 			}
-
 		} else {
 			System.out.println("Lista de contatos vazia");
 		}
@@ -47,7 +46,7 @@ public class Metodos {
 
 		if (lista.size() > 0) {
 			for (int i = 0; i < lista.size(); i++) {
-				System.out.println("Contato Nº: " + i);
+				System.out.println("Contato NÂº: " + i);
 				System.out.println("Nome: " + lista.get(i).getNome());
 				System.out.println("E-mail: " + lista.get(i).getEmail());
 				System.out.println("Telefone: " + lista.get(i).getTelefone() + "\n");
@@ -64,12 +63,13 @@ public class Metodos {
 			for (int i = 0; i < lista.size(); i++) {
 				if (lista.get(i).getNome().equals(nome)) {
 					System.out.println("\nContato: " + nome + " encontrado.");
-					System.out.println("Contato Nº: " + i);
+					System.out.println("Contato NÂº: " + i);
 					System.out.println("Nome: " + lista.get(i).getNome());
 					System.out.println("E-mail: " + lista.get(i).getEmail());
 					System.out.println("Telefone: " + lista.get(i).getTelefone());
+					break;
 				} else {
-					System.out.println("Contato não cadastrado");
+					System.out.println("Contato nÃ£o cadastrado");
 				}
 			}
 		} else {
@@ -84,12 +84,13 @@ public class Metodos {
 			for (int i = 0; i < lista.size(); i++) {
 				if (lista.get(i).getEmail().equals(email)) {
 					System.out.println("\nE-mail: " + email + " encontrado.");
-					System.out.println("Contato Nº: " + i);
+					System.out.println("Contato NÂº: " + i);
 					System.out.println("Nome: " + lista.get(i).getNome());
 					System.out.println("E-mail: " + lista.get(i).getEmail());
 					System.out.println("Telefone: " + lista.get(i).getTelefone());
+					break;
 				} else {
-					System.out.println("E-mail não cadastrado.");
+					System.out.println("E-mail nÃ£o cadastrado.");
 				}
 			}
 		} else {
@@ -105,12 +106,13 @@ public class Metodos {
 			for (int i = 0; i < lista.size(); i++) {
 				if (lista.get(i).getTelefone().equals(telefone)) {
 					System.out.println("\nTelefone: " + telefone + " encontrado.");
-					System.out.println("Contato Nº: " + i);
+					System.out.println("Contato NÂº: " + i);
 					System.out.println("Nome: " + lista.get(i).getNome());
 					System.out.println("E-mail: " + lista.get(i).getEmail());
 					System.out.println("Telefone: " + lista.get(i).getTelefone());
+					break;
 				} else {
-					System.out.println("Número de Telefone não cadastrado");
+					System.out.println("NÃºmero de Telefone nÃ£o cadastrado");
 				}
 			}
 		} else {
@@ -126,8 +128,9 @@ public class Metodos {
 			for (int i = 0; i < lista.size(); i++) {
 				if (lista.get(i).getNome().equals(nome)) {
 					lista.remove(i);
+					break;
 				} else {
-					System.out.println("Contato não cadastrado");
+					System.out.println("Contato nÃ£o cadastrado");
 				}
 			}
 		} else {
